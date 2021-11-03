@@ -2,8 +2,7 @@ import {
   BrowserRouter as Router 
 } from "react-router-dom";
 import { Routes } from './routes'
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Nav from './components/template/NavBar/Nav'
+import 'bootstrap/dist/css/bootstrap.min.css'
 import Sidebar from './components/template/SideBar/Sidebar'
 import './assets/css/styles.css'
 
@@ -11,12 +10,13 @@ import './assets/css/styles.css'
 function App() {
   return (
     <>
-      <Nav/>
-      <Sidebar/>
+    <body class="sidebar-menu-collapsed">
+      
       <Router>
         <Routes/>
       </Router>
       
+      </body>
 
       
     </>
