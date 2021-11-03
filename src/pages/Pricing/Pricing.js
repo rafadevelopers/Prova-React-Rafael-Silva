@@ -1,6 +1,7 @@
 import React from 'react'
 import './Pricing.css'
 import Sidebar from '../../components/template/SideBar/Sidebar'
+import Footer from '../../components/template/Footer/Footer'
 
 function Pricing(props) {
 
@@ -223,6 +224,7 @@ function Pricing(props) {
 
 
 </div>
+<Footer/>
         </>
     )
 }

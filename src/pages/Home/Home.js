@@ -1,6 +1,5 @@
 import React from 'react'
 import './Home.css'
-import Banners from '../../components/macro/Banners/Banner'
 import Button from '../../components/micro/Button/Button'
 import Sidebar from '../../components/template/SideBar/Sidebar'
 import Footer from '../../components/template/Footer/Footer'

@@ -5,12 +5,11 @@ import { Routes } from './routes'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Sidebar from './components/template/SideBar/Sidebar'
 import './assets/css/styles.css'
-import ScriptTag from 'react-script-tag';
 
 
-const Demo = props => (
-  <ScriptTag type="text/javascript" src="../" />
-  )
+
+
+  
 
 
 

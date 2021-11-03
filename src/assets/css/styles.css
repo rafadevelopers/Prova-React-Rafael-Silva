@@ -5,6 +5,36 @@
  */
 /* FONT PATH
  * -------------------------- */
+ 
+
+.btn-custom-default {
+  font-weight: bold;
+  padding: 10px 20px;
+  margin-top:10px;
+  margin-right: 10px;
+  text-transform: uppercase;
+  border:none;
+  text-decoration: none;
+  display: inline-block
+}
+
+.btn-custom-default:hover {
+  opacity: 0.8;
+  color: #fff
+}
+
+.conversao {
+  
+  border-radius: 3px;
+  background-color:#0069D9;
+  color: #fff;
+}
+
+.apoio {
+  background-color: #333;
+  color: #fff;
+}
+
  @font-face {
   font-family: 'FontAwesome';
   src: url("../fonts/fontawesome-webfont.eot");
