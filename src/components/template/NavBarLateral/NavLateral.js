@@ -1,56 +1,75 @@
 import React from 'react'
 import './NavLateral.css'
-
 import imglogo from '../../../assets/imgs/logo.png'
+import {
+  CDBSidebar,
+  CDBSidebarContent,
+  CDBSidebarFooter,
+  CDBSidebarHeader,
+  CDBSidebarMenu,
+  CDBSidebarMenuItem,
+} from 'cdbreact';
+import { NavLink } from 'react-router-dom';
 
 
 
-function Header(props) {
+const NavLateral = () => {
+  return (
+    <div
+    style={{ display: 'flex', height: '100vh', overflow: 'scroll initial' }}
+  >
+    <CDBSidebar textColor="#fff" backgroundColor="#333">
+      <CDBSidebarHeader prefix={<i className="fa fa-bars fa-large"></i>}>
+        <a
+          href="/"
+          className="text-decoration-none"
+          style={{ color: 'inherit' }}
+        >
+          Sidebar
+        </a>
+      </CDBSidebarHeader>
 
-    return(
-        <>
-        <div className="sidebar-menu sticky-sidebar-menu">
+      <CDBSidebarContent className="sidebar-content">
+        <CDBSidebarMenu>
+          <NavLink exact to="/" activeClassName="activeClicked">
+            <CDBSidebarMenuItem icon="columns">Dashboard</CDBSidebarMenuItem>
+          </NavLink>
+          <NavLink exact to="/tables" activeClassName="activeClicked">
+            <CDBSidebarMenuItem icon="table">Tables</CDBSidebarMenuItem>
+          </NavLink>
+          <NavLink exact to="/profile" activeClassName="activeClicked">
+            <CDBSidebarMenuItem icon="user">Profile page</CDBSidebarMenuItem>
+          </NavLink>
+          <NavLink exact to="/analytics" activeClassName="activeClicked">
+            <CDBSidebarMenuItem icon="chart-line">
+              Analytics
+            </CDBSidebarMenuItem>
+          </NavLink>
 
+          <NavLink
+            exact
+            to="/hero404"
+            target="_blank"
+            activeClassName="activeClicked"
+          >
+            <CDBSidebarMenuItem icon="exclamation-circle">
+              404 page
+            </CDBSidebarMenuItem>
+          </NavLink>
+        </CDBSidebarMenu>
+      </CDBSidebarContent>
 
-<div className="logo">
-  <h1><a href="index.html">Collective</a></h1>
-</div>
-
-
-
-<div className="logo">
-<a href="index.html">
-  <img src="image-path" alt="Your logo" title="Your logo" className="img-fluid" style="height:35px;" />
-</a>
-</div>
-
-
-<div className="logo-icon text-center">
-  <a href="index.html" title="logo"><img src={{imglogo}} alt="logo-icon"></img> </a>
-</div>
-
-
-<div className="sidebar-menu-inner">
-
-
-  <ul className="nav nav-pills nav-stacked custom-nav">
-    <li><a href="index.html"><i className="fa fa-tachometer"></i><span> Dashboard</span></a>
-    </li>
-    <li><a href="cards.html"><i className="fa fa-cogs"></i> <span>Default cards</span></a></li>
-    <li><a href="pricing.html"><i className="fa fa-table"></i> <span>Pricing tables</span></a></li>
-    <li><a href="blocks.html"><i className="fa fa-th"></i> <span>Content blocks</span></a></li>
-    <li><a href="forms.html"><i className="fa fa-file-text"></i> <span>Forms</span></a></li>
-  </ul>
-
-
-  <a className="toggle-btn" onclick="toggleMenu()">
-    <i className="fa fa-angle-double-left menu-collapsed__left"><span>Collapse Sidebar</span></i>
-    <i className="fa fa-angle-double-right menu-collapsed__right"></i>
-  </a>
-</div>
-</div>
-        </>
-    )
-}
-
-export default Header
+      <CDBSidebarFooter style={{ textAlign: 'center' }}>
+        <div
+          style={{
+            padding: '20px 5px',
+          }}
+        >
+          Sidebar Footer
+        </div>
+      </CDBSidebarFooter>
+    </CDBSidebar>
+  </div>
+);
+};
+        export default NavLateral;

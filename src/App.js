@@ -12,10 +12,11 @@ function App() {
   return (
     <>
       <Nav/>
+      <NavLateral/>
       <Router>
         <Routes/>
       </Router>
-      <NavLateral/>
+      
 
       
     </>
