@@ -4,17 +4,20 @@ import {
 import { Routes } from './routes'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import Header from './components/template/Header/Header'
-import Footer from './components/template/Footer/Footer'
+import Nav from './components/template/NavBar/Nav'
+import NavLateral from './components/template/NavBarLateral/NavLateral'
+
 
 function App() {
   return (
     <>
-      <Header/>
+      <Nav/>
       <Router>
         <Routes/>
       </Router>
-      <Footer/>
+      <NavLateral/>
+
+      
     </>
   );
 }

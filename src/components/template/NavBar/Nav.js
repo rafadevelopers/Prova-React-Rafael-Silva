@@ -1,5 +1,5 @@
 import React from 'react'
-import './Header.css'
+import './Nav.css'
 import { Navbar, Nav, Container, NavDropdown, Form, FormControl,  Button } from 'react-bootstrap'
 import imgperfil from '../../../assets/imgs/profileimg.jpg'
 
@@ -21,13 +21,13 @@ function Header(props) {
 
       </Nav>
       <Form className="d-flex">
-        <FormControl
+        <FormControl style={{backgroundColor: "#FFFFFF"}}
           type="search"
-          placeholder="Search"
+          placeholder="Search Here"
           className="me-2"
           aria-label="Search"
         />
-        <img src={imgperfil}></img>
+        <img style={{borderRadius: "50px", width:""}} src={imgperfil}></img>
       </Form>
     </Navbar.Collapse>
   </Container>
