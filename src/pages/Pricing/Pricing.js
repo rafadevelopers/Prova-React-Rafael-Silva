@@ -1,33 +1,37 @@
 import React from 'react'
 import './Pricing.css'
+import Sidebar from '../../components/template/SideBar/Sidebar'
 
 function Pricing(props) {
 
     return (
         <>
-           <div class="main-content">
+       <Sidebar/>
 
-           <div class="container-fluid content-top-gap">
+<div class="main-content">
 
+<div class="container-fluid content-top-gap">
 
-           <nav aria-label="breadcrumb" class="mb-4">
+<nav aria-label="breadcrumb" class="mb-4">
           <ol class="breadcrumb my-breadcrumb">
             <li class="breadcrumb-item"><a href="index.html">Home</a></li>
             <li class="breadcrumb-item active" aria-current="page">Pricing Tables</li>
           </ol>
         </nav>
+
         <section class="pricing">
-          <div class="card card_border mb-5">
-            <div class="cards__heading">
+
+        <div class="card card_border mb-5">
+
+        <div class="cards__heading">
               <h3>Pricing Tables -<span> Version 1</span></h3>
             </div>
             <div class="card-body">
-              <!-- pricing version 1 -->
 
-              <!--//BLOCK ROW END-->
 
-              <section class="w3l-pricing1">
-                <div class="row px-2">
+            <section class="w3l-pricing1">
+
+            <div class="row px-2">
                   <div class="col-md-4 px-2">
                     <div class="mb-4 price-card price-card1 p-lg-4 p-md-3 p-4">
                       <div class="card-header p-0 card-heading">
@@ -99,18 +103,7 @@ function Pricing(props) {
                     </div>
                   </div>
                 </div>
-            </div>
-          </div>
-        </section>
-
-
-
-        <!--BLOCK ROW START-->
-
-        <!-- //pricing version 1 -->
-
-        <!-- pricing version 2 -->
-        <div class="pricing-version-2">
+                <div class="pricing-version-2">
           <div class="card card_border mb-5">
             <div class="cards__heading">
               <h3>Pricing Tables -<span> Version 2</span></h3>
@@ -118,7 +111,6 @@ function Pricing(props) {
             <div class="card-body">
               <div class="row px-2">
 
-                <!-- Table #1  -->
                 <div class="col-lg-4 col-md-6 px-2 mb-4">
                   <div class="card text-center card__hover">
                     <div class="card-header">
@@ -141,7 +133,7 @@ function Pricing(props) {
                   </div>
                 </div>
 
-                <!-- Table #2  -->
+            
                 <div class="col-lg-4 col-md-6 px-2 mb-4">
                   <div class="card text-center card__hover">
                     <div class="card-header">
@@ -164,7 +156,7 @@ function Pricing(props) {
                   </div>
                 </div>
 
-                <!-- Table #3  -->
+        
                 <div class="col-lg-4 col-md-6 px-2 mb-4">
                   <div class="card text-center card__hover">
                     <div class="card-header">
@@ -191,23 +183,46 @@ function Pricing(props) {
             </div>
           </div>
         </div>
-        <!-- //pricing version 2 -->
-  </section>
-  <!-- //pricing -->
 
-  </div>
-  <!-- //content -->
 
-  </div>
-  <!-- main content end-->
-  </section>
-  <!--footer section start-->
-  <footer class="dashboard">
-    <p>&copy 2020 Collective. All Rights Reserved | Design by <a href="https://w3layouts.com/" target="_blank"
-        class="text-primary">W3layouts.</a></p>
-  </footer>
-           </div>
-           </div>
+
+
+            </section>
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+
+
+
+
+
+        </div>
+
+
+
+
+
+        </section>
+
+
+
+
+
+</div>
+
+
+
+
+</div>
         </>
     )
 }

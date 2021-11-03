@@ -2,6 +2,7 @@ import React from 'react'
 
 import imgprofile from '../../../assets/imgs/profileimg.jpg'
 import imglogo from '../../../assets/imgs/logo.png'
+import { Link } from 'react-router-dom'
 
 
 
@@ -20,14 +21,14 @@ function Sidebar(props) {
 
 
 <div class="logo">
-<a href="index.html">
+<Link to = '/home'>
   <img src="image-path" alt="Your logo" title="Your logo" class="img-fluid" style={{height: "35px"}} />
-</a>
+</Link>
 </div>
 
 
 <div class="logo-icon text-center">
-  <a href="index.html" title="logo"><img src={imglogo} alt="logo-icon"/> </a>
+  < Link to = '/home' title="logo"><img src={imglogo} alt="logo-icon"/> </Link>
 </div>
 
 
@@ -35,12 +36,12 @@ function Sidebar(props) {
 
 
   <ul class="nav nav-pills nav-stacked custom-nav">
-    <li><a href="index.html"><i class="fa fa-tachometer"></i><span> Dashboard</span></a>
+    <li><Link to = '/home'><i class="fa fa-tachometer"></i><span> Dashboard</span></Link>
     </li>
-    <li><a href="cards.html"><i class="fa fa-cogs"></i> <span>Default cards</span></a></li>
-    <li><a href="pricing.html"><i class="fa fa-table"></i> <span>Pricing tables</span></a></li>
-    <li><a href="blocks.html"><i class="fa fa-th"></i> <span>Content blocks</span></a></li>
-    <li><a href="forms.html"><i class="fa fa-file-text"></i> <span>Forms</span></a></li>
+    <li><Link to = '/cards'><i class="fa fa-cogs"></i> <span>Default cards</span></Link></li>
+    <li><Link to = '/pricing'><i class="fa fa-table"></i> <span>Pricing tables</span></Link></li>
+    <li><Link to = '/blocks'><i class="fa fa-th"></i> <span>Content blocks</span></Link></li>
+    <li><Link to = '/forms'><i class="fa fa-file-text"></i> <span>Forms</span></Link></li>
   </ul>
 
 
