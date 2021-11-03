@@ -1,18 +1,18 @@
 import {
-  BrowserRouter as Router
+  BrowserRouter as Router 
 } from "react-router-dom";
 import { Routes } from './routes'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.css';
 import Nav from './components/template/NavBar/Nav'
-import NavLateral from './components/template/NavBarLateral/NavLateral'
+import Sidebar from './components/template/SideBar/Sidebar'
+import './assets/css/styles.css'
 
 
 function App() {
   return (
     <>
       <Nav/>
-      <NavLateral/>
+      <Sidebar/>
       <Router>
         <Routes/>
       </Router>
