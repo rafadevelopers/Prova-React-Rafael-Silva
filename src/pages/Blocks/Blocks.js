@@ -1,7 +1,7 @@
 import React from 'react'
-import './Checkout.css'
+import './Blocks.css'
 
-function Checkout(props) {
+function Blocks(props) {
 
     return(
         <>
@@ -10,4 +10,4 @@ function Checkout(props) {
     )
 }
 
-export default Checkout
+export default Blocks

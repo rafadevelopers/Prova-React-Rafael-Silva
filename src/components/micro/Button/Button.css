@@ -1,3 +1,9 @@
+@font-face {
+    font-family: customfont;
+    src: url(../../../assets/Fonts/fontawesome-webfont.eot);
+}
+
+
 .btn-custom-default {
     font-weight: bold;
     padding: 10px 20px;
@@ -15,7 +21,9 @@
 }
 
 .conversao {
-    background-color: green;
+    
+    border-radius: 3px;
+    background-color:#0069D9;
     color: #fff;
 }
 
